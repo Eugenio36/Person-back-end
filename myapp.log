@@ -1752,3 +1752,46 @@ com.ergohomework.personmanager.exceptions.UserNotFoundException: User by id 1504
 2022-05-26 20:45:56.048  INFO 13368 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-05-26 20:45:56.049  INFO 13368 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2022-05-26 20:45:56.050  INFO 13368 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-26 21:35:33.906  INFO 14500 --- [main] c.e.p.PersonmanagerApplication           : Starting PersonmanagerApplication using Java 17.0.2 on WINDOWS-3C9PFI3 with PID 14500 (C:\Users\User\IdeaProjects\Person\personmanager\target\classes started by User in C:\Users\User\IdeaProjects\Person\personmanager)
+2022-05-26 21:35:33.907 DEBUG 14500 --- [main] c.e.p.PersonmanagerApplication           : Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-05-26 21:35:33.908  INFO 14500 --- [main] c.e.p.PersonmanagerApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-05-26 21:35:34.184  INFO 14500 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-26 21:35:34.210  INFO 14500 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 2 JPA repository interfaces.
+2022-05-26 21:35:34.434  INFO 14500 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-26 21:35:34.439  INFO 14500 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-26 21:35:34.439  INFO 14500 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-26 21:35:34.487  INFO 14500 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-26 21:35:34.488  INFO 14500 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 556 ms
+2022-05-26 21:35:34.504  INFO 14500 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-26 21:35:34.556  INFO 14500 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-26 21:35:34.562  INFO 14500 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:mydb'
+2022-05-26 21:35:34.702  INFO 14500 --- [main] liquibase.database                       : Set default schema name to PUBLIC
+2022-05-26 21:35:34.781  INFO 14500 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2022-05-26 21:35:34.926  INFO 14500 --- [main] liquibase.changelog                      : Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2022-05-26 21:35:34.929  INFO 14500 --- [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2022-05-26 21:35:34.979  INFO 14500 --- [main] liquibase.changelog                      : Custom SQL executed
+2022-05-26 21:35:34.979  INFO 14500 --- [main] liquibase.changelog                      : ChangeSet db/changelog/changes/0001-create_table_person.sql::1::jevgenijs ran successfully in 6ms
+2022-05-26 21:35:34.984  INFO 14500 --- [main] liquibase.changelog                      : Custom SQL executed
+2022-05-26 21:35:34.985  INFO 14500 --- [main] liquibase.changelog                      : ChangeSet db/changelog/changes/0001-create_table_person.sql::2::jevgenijs ran successfully in 2ms
+2022-05-26 21:35:34.987  INFO 14500 --- [main] liquibase.changelog                      : Custom SQL executed
+2022-05-26 21:35:34.987  INFO 14500 --- [main] liquibase.changelog                      : ChangeSet db/changelog/changes/0002-create_table_log.sql::3::jevgenijs ran successfully in 1ms
+2022-05-26 21:35:34.989  INFO 14500 --- [main] liquibase.changelog                      : Sequence hibernate_sequence created
+2022-05-26 21:35:34.989  INFO 14500 --- [main] liquibase.changelog                      : ChangeSet db/changelog/changes/0003-create_sequence.xml::4::Jevgenijs ran successfully in 1ms
+2022-05-26 21:35:34.991  INFO 14500 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2022-05-26 21:35:35.036  INFO 14500 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-26 21:35:35.056  INFO 14500 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-05-26 21:35:35.114  INFO 14500 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-26 21:35:35.161  INFO 14500 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-05-26 21:35:35.387  INFO 14500 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-26 21:35:35.393  INFO 14500 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-26 21:35:35.549  WARN 14500 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-26 21:35:35.701  INFO 14500 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-26 21:35:35.707  INFO 14500 --- [main] c.e.p.PersonmanagerApplication           : Started PersonmanagerApplication in 2.002 seconds (JVM running for 2.314)
+2022-05-26 21:35:40.796  INFO 14500 --- [http-nio-8080-exec-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-26 21:35:40.796  INFO 14500 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-26 21:35:40.797  INFO 14500 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-26 21:36:34.565  WARN 14500 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDate'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam @org.springframework.format.annotation.DateTimeFormat java.time.LocalDate] for value '1'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [1]]
+2022-05-26 21:36:46.312 DEBUG 14500 --- [http-nio-8080-exec-7] c.e.personmanager.service.PersonService  : Person was queried by personal ID: 150497-11324 and date of birth: 1997-04-15
+2022-05-26 21:37:05.132  INFO 14500 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-26 21:37:05.133  INFO 14500 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-26 21:37:05.134  INFO 14500 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
