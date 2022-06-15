@@ -1,11 +1,12 @@
 package com.ergohomework.personmanager.service;
 
-import com.ergohomework.personmanager.exceptions.UserNotFoundException;
 import com.ergohomework.personmanager.domain.Person;
 import com.ergohomework.personmanager.repository.PersonRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.time.LocalDate;
 
@@ -23,6 +24,7 @@ public class PersonService {
     }
 
     public Person getPersonByPersonalIdAndDateOfBirth(String personalId, LocalDate dateOfBirth) {
+
         String logMessage = "Person was queried by personal ID: " + personalId + " and date of birth: " + dateOfBirth;
         String exceptionMessage = "User by id " + personalId + " and date of birth " + dateOfBirth + " was not found.";
 
@@ -31,6 +33,7 @@ public class PersonService {
 
         return personRepository
                 .findByPersonalIdAndDateOfBirth(personalId, dateOfBirth)
-                .orElseThrow(() -> new UserNotFoundException(exceptionMessage));
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, exceptionMessage));
+
     }
 }
